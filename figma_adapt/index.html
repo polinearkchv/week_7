@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Быстрый подбор автомобиля</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="body">
+    <header style="background-image: url('images/backpic.png')" id="backpic">
+      <h1 class="h1">БЫСТРЫЙ ПОДБОР НОВОГО АВТОМОБИЛЯ</h1>
+    </header>
+
+    <img src="images/car.png" alt="red-car" id="red_car" />
+
+    <form style="background-image: url('images/form_pic.png')" id="form_pic">
+      <div class="car_brand">
+        <label for="brand" class="form_font">Марка</label>
+        <input type="text" id="brand" placeholder="Выбрать..." />
+
+        <p class="form_font">Цена от, руб.</p>
+        <select>
+          <option value="1" selected="selected" class="price">
+            Не выбрана
+          </option>
+          <option value="2">350 000 - 500 000</option>
+          <option value="3">500 000 - 1 000 000</option>
+          <option value="4">1 000 000 - 3 000 000</option>
+        </select>
+      </div>
+
+      <div class="car_model">
+        <label for="model" class="form_font">Модель</label>
+        <input type="text" id="model" placeholder="Выбрать..." />
+
+        <p class="form_font">Цена до, руб.</p>
+        <select>
+          <option value="1" selected="selected" class="price">
+            Не выбрана
+          </option>
+          <option value="2">500 000 - 700 000</option>
+          <option value="3">700 000 - 1 000 000</option>
+          <option value="4">1 000 000 - 3 000 000</option>
+        </select>
+      </div>
+
+      <div class="drive">
+        <p class="form_font">КПП</p>
+
+        <div class="drive_button">
+          <button class="button">Любая</button>
+          <button class="button">АКПП</button>
+          <button class="button" id="mech">МКПП</button>
+        </div>
+        <div class="offers">
+          <button class="offers_button" href="offers.html">
+            ПОКАЗАТЬ 320 ПРЕДЛОЖЕНИЙ
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
